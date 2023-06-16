@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Food Circle</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    </head> 
+    <body>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="index.html"class="pull-left visible-md visible-lg">
+                            <div id="logo-img" alt="logo image"></div>
+                        </a>
+                        <div class="navbar-brand">
+                            <a href="index.html"><h1>Food Circles</h1></a>
+                            <p>
+                              <img src="images/kosher.png" alt="kashor certification">
+                              <span>Kosher certified</span>
+                            </p>
+                        </div>
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                            <span class="sr-only"> Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div  id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li class="visible-xs active">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-categories.html">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards
+                            </a>
+                        </li>
+                        <li id="phone" class="hidden-xs">
+                            <a href="Phone:99-087-65423">
+                                <span>99-087-65423</span>
+                            </a>
+                            <div>* We Deliver</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <div id="call-btn" class="text-center visible-xs">
+            <a class="btn" href="tel:990-876-5423">
+                <span class="glyphicon glyphicon-earphone"></span>990-876-5423
+            </a>
+        </div>
+        <div id="xs-deliver" class="text-center visible-xs">*We Deliver
+        </div>
+
+        <div id="main-content" class="container">
+            <div class="jumbotron">
+              <img src="images/resturent_768px.jpg" alt="picture of resturent" class="img-responsive visible-xs">  
+            </div>
+            <div class="row" id="home-tiles">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="menu-categories.html">
+                        <div id="menu-tile"><span>menu</span></div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="single-category.html">
+                        <div id="specials-tile"><span>specials</span></div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://goo.gl/maps/FNoDYQKHo4GHtuRS7"target="_blank">
+                        <div id="map-tile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743873.7687773823!2d73.6109564281531!3d31.3864682695423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a49aff5aeb535%3A0x8550859fc7fe6677!2sFood%20Circle!5e0!3m2!1sen!2sin!4v1686743198361!5m2!1sen!2sin" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>map</span></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <footer class="panal-footer">
+            <div class="container">
+                <div class="row">
+                    <section id="hours" class="col-sm-4">
+                        <span>Hours:</span><br>
+                        Sun-Thrus: 11:15am -10:00pm<br>
+                        Fri: 11:15am -2:30pm<br>
+                        saturday: Closed 
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="address" class="col-sm-4">
+                        <span>Address:</span><br>
+                        Police Line, Kapurthala,<br>
+                         Punjab 144602<br>
+                         <p>* Delivery area within 3-4 miles, with minimum orders of 500rs there will be no delivery charges. </p>
+                        <hr class="visible-xs">
+                    </section>
+                    <section id="testimonials" class="col-sm-4">
+                       <p>"The best Indian resturent i've been too! And that's saying a lot, since i've been to many!"</p>
+                       <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+                    </section>
+                    
+                </div>
+                <div class="text-center">&copy; Copyright Food circles 2023</div>
+            </div>
+        </footer>
+       
+
+
+
+        <!-----jQuary (Bootstrap JS plugins Depends on it)-->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body> 
+</html> 
